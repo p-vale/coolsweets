@@ -1,3 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 h1 {
-    color: red;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    margin: 3px;
+    padding: 2px;
+    font-size: 1.7em;
+}
+
+#main {
+    height: 90vh;
+    display: flex;
+}
+
+#cover {
+    width: 50vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover { /*change to coverImg?*/
+    height: 80vh;
+    width: auto;
+}
+
+#info {
+    width: 40vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title {
+    margin: 30px;
+    font-size: 3.5em;
+}
+
+#options {
+    display:flex;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > img {
+    width: 12vh;
+    height: auto;
+    transition: transform .5s ease;
+}
+
+.card > img:hover {
+    transform: scale(1.5);
+}
+
+.card > p {
+    font-family: sans;
+    font-size: 1.5em;
+    margin-top: 10px;
 }

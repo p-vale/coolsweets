@@ -1,9 +1,12 @@
 function sectionMaker (node, el) {
     const coverImg = document.createElement('div')
+    coverImg.id = 'cover'
     coverImg.append(el.cover)
 
     const info = document.createElement('div')
+    info.id = 'info'
     const options = document.createElement('div')
+    options.id = 'options'
     let opt = el.opt
     for (const [key, value] of Object.entries(opt)) {
         let card = document.createElement('div')
@@ -17,6 +20,7 @@ function sectionMaker (node, el) {
       }
     info.append(el.title, options)
 
+    node.innerHTML = ''
     node.append(coverImg, info)
 }
 
