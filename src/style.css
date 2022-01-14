@@ -36,15 +36,23 @@
          url('./fonts/libr/libre-baskerville-v9-latin-italic.woff') format('woff'), /* Modern Browsers */
          url('./fonts/libr/libre-baskerville-v9-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('./fonts/libr/libre-baskerville-v9-latin-italic.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
-  }
+}
 
+/*scrolbar*/
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body {
+    -ms-overflow-style: none; /*scrolbar*/
+    scrollbar-width: none;
+}
 
 header {
-    height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 20px;
 }
 
 h1 {
@@ -57,37 +65,41 @@ h1 {
 nav {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .btn {
     background-color: transparent;
     border: none;
-    margin: 3px;
     padding: 2px;
     font-family: 'Rubik', sans-serif;
     font-size: 1.7em;
 }
 
 #main {
-    height: 90vh;
+    margin-top: 20px;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #cover {
-    width: 50vw;
+    width: 40vw;
+    max-height: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
+    display: block;
 }
 
-.cover { /*change to coverImg?*/
-    height: 80vh;
-    width: auto;
+.cover { /*change to #coverImg?*/
+    max-width:100%;
+    max-height:100%;
+    display: block;
 }
 
 #info {
-    width: 40vw;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -100,6 +112,7 @@ nav {
     font-style: italic;
     font-weight: 400;
     font-size: 3.5em;
+    text-align: center;
 }
 
 #options {
@@ -115,7 +128,7 @@ nav {
 }
 
 .card > img {
-    width: 12vh;
+    width: 120px;
     height: auto;
     margin-bottom: 30px;
     transition: transform .5s ease;
@@ -129,4 +142,38 @@ nav {
     font-family: 'Rubik', sans-serif;
     font-weight: lighter;
     font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1300px) {
+    #cover {
+      width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #main {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .btn {
+        font-size: 1.3em;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .card > img {
+        width: 90px;
+    }
+
+    .card > p {
+        font-size: 1em;
+    }
 }

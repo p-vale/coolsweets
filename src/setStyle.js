@@ -1,7 +1,7 @@
 function setStyle(paper, ink, header, main) {
+    document.body.style.backgroundColor = paper
     header.style.backgroundColor = paper
     header.style.color = ink
-    main.style.backgroundColor = paper
     main.style.color = ink
     const btns = document.querySelectorAll('.btn');
     for (const btn of btns) {
