@@ -1,7 +1,7 @@
-import coverImg from './luxurious-seeds.png'
-import cocoaI from './imgs/cocoa.png'
-import coffeeI from './imgs/coffee.png'
-import pistachioI from './imgs/pistachio.png'
+import coverImg from './luxurious-seeds.jpg'
+import cocoaI from './imgs/cocoa.jpg'
+import coffeeI from './imgs/coffee.jpg'
+import pistachioI from './imgs/pistachio.jpg'
 
 const title = document.createElement('h2')
 title.innerHTML = 'Luxurious Seeds'

@@ -1,7 +1,7 @@
-import coverImg from './soft-flowers.png'
-import camomilleI from './imgs/camomille.png'
-import dandelionI from './imgs/dandelion.png'
-import roseI from './imgs/rose.png'
+import coverImg from './soft-flowers.jpg'
+import camomilleI from './imgs/camomille.jpg'
+import dandelionI from './imgs/dandelion.jpg'
+import roseI from './imgs/rose.jpg'
 
 const title = document.createElement('h2')
 title.innerHTML = 'Soft Flowers'

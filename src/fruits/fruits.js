@@ -1,8 +1,8 @@
-import coverImg from './seasonal-fruits.png'
-import autumnI from './imgs/autumn.png'
-import springI from './imgs/spring.png'
-import summerI from './imgs/summer.png'
-import winterI from './imgs/winter.png'
+import coverImg from './seasonal-fruits.jpg'
+import autumnI from './imgs/autumn.jpg'
+import springI from './imgs/spring.jpg'
+import summerI from './imgs/summer.jpg'
+import winterI from './imgs/winter.jpg'
 
 const title = document.createElement('h2')
 title.innerHTML = 'Seasonal Fruits'
@@ -29,9 +29,9 @@ winter.src = winterI
 winter.classList.add('opt')
 
 const options = {
+    summer: summer,
     winter: winter,
     spring: spring,
-    summer: summer,
     autumn: autumn
 }
 
