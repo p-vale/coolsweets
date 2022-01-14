@@ -3,6 +3,42 @@
     padding: 0;
 }
 
+/* rubik */
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/rubi/rubik-v14-latin-regular.eot?') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/rubi/rubik-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/rubi/rubik-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/rubi/rubik-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/rubi/rubik-v14-latin-regular.svg#Rubik') format('svg'); /* Legacy iOS */
+  }
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: lighter;
+    src: url('./fonts/rubi/rubik-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('./fonts/rubi/rubik-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./fonts/rubi/rubik-v14-latin-300.woff') format('woff'), /* Modern Browsers */
+        url('./fonts/rubi/rubik-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./fonts/rubi/rubik-v14-latin-300.svg#Rubik') format('svg'); /* Legacy iOS */
+}
+
+/* libre-baskerville */
+@font-face {
+    font-family: 'Libre';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./fonts/libr/libre-baskerville-v9-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/libr/libre-baskerville-v9-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/libr/libre-baskerville-v9-latin-italic.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/libr/libre-baskerville-v9-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/libr/libre-baskerville-v9-latin-italic.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+  }
+
+
 header {
     height: 10vh;
     display: flex;
@@ -14,8 +50,8 @@ header {
 h1 {
     font-size: 1em;
     margin-bottom: 10px;
-    font-family: sans-serif;
-    font-weight: 200;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
 }
 
 nav {
@@ -24,11 +60,12 @@ nav {
     gap: 10px;
 }
 
-button {
+.btn {
     background-color: transparent;
     border: none;
     margin: 3px;
     padding: 2px;
+    font-family: 'Rubik', sans-serif;
     font-size: 1.7em;
 }
 
@@ -58,7 +95,10 @@ button {
 }
 
 .section-title {
-    margin: 30px;
+    margin: 40px;
+    font-family: 'Libre', sans-serif;
+    font-style: italic;
+    font-weight: 400;
     font-size: 3.5em;
 }
 
@@ -77,6 +117,7 @@ button {
 .card > img {
     width: 12vh;
     height: auto;
+    margin-bottom: 30px;
     transition: transform .5s ease;
 }
 
@@ -85,7 +126,7 @@ button {
 }
 
 .card > p {
-    font-family: sans;
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
 }

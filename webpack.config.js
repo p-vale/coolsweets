@@ -9,6 +9,7 @@ module.exports = {
         fruit: './src/fruits/fruits.js',
         sectionMaker: './src/sectionMaker.js',
         seed: './src/seeds/seeds.js',
+        setStyle: './src/setStyle.js'
     },
     devtool: 'inline-source-map',
     plugins: [

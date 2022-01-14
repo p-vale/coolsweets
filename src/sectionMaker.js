@@ -11,9 +11,11 @@ function sectionMaker (node, el) {
     for (const [key, value] of Object.entries(opt)) {
         let card = document.createElement('div')
         card.classList.add('card')
+        let name = `${key}`
+        name = name.toUpperCase()
         let description = document.createElement('p')
         description.classList.add('description')
-        description.innerHTML = `${key}`
+        description.innerHTML = name
 
         card.append(value, description)
         options.appendChild(card)
