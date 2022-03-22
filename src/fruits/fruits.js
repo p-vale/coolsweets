@@ -10,7 +10,7 @@ title.classList.add('section-title')
 
 const cover = document.createElement('img')
 cover.src = coverImg
-cover.classList.add('cover')
+cover.classList.add('coverImg')
 
 const autumn = document.createElement('img')
 autumn.src = autumnI

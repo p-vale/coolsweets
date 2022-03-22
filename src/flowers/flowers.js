@@ -9,7 +9,7 @@ title.classList.add('section-title')
 
 const cover = document.createElement('img')
 cover.src = coverImg
-cover.classList.add('cover')
+cover.classList.add('coverImg')
 
 const camomille = document.createElement('img')
 camomille.src = camomilleI
