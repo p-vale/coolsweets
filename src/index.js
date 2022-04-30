@@ -5,10 +5,9 @@ import sectionMaker from './sectionMaker'
 import setStyle from './setStyle'
 import './style.css'
 
-function page() {
+function page () {
     const content = document.createElement('div')
     content.id = 'content'
-    //main areas
     const header = document.createElement('header')
     const main = document.createElement('div')
     main.id = 'main'
@@ -20,7 +19,6 @@ function page() {
     let paper = ''
     let ink = ''
 
-    //header
     const company = document.createElement('h1')
     company.innerHTML = '~ COOLSWEETS ~'
     
@@ -34,7 +32,6 @@ function page() {
         setStyle(paper, ink, header, main)
         sectionMaker(main, seedObj)
         btnSeed.style.borderBottom = `1px solid ${ink}`
-        //btn margin bottom
     })
     const btnFlower = document.createElement('button')
     btnFlower.innerHTML = 'Soft Flowers'
@@ -45,7 +42,6 @@ function page() {
         setStyle(paper, ink, header, main)
         sectionMaker(main, flowerObj)
         btnFlower.style.borderBottom = `1px solid ${ink}`
-        //btn margin bottom
     })
     const btnFruit = document.createElement('button')
     btnFruit.innerHTML = 'Seasonal Fruits'
@@ -56,7 +52,6 @@ function page() {
         setStyle(paper, ink, header, main)
         sectionMaker(main, fruitObj)
         btnFruit.style.borderBottom = `1px solid ${ink}`
-        //btn margin bottom
     })
     
     nav.appendChild(btnSeed)
@@ -64,9 +59,7 @@ function page() {
     nav.appendChild(btnFruit)
     header.appendChild(company)
     header.appendChild(nav)
-
-    //set starting style
-    btnFlower.click()
+    btnFlower.click() //set starting style
 
     return content
 }

@@ -1,4 +1,4 @@
-function setStyle(paper, ink, header, main) {
+function setStyle (paper, ink, header, main) {
     document.body.style.backgroundColor = paper
     header.style.backgroundColor = paper
     header.style.color = ink
