@@ -1,186 +1,194 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* rubik */
 @font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/rubi/rubik-v14-latin-regular.eot?') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/rubi/rubik-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./fonts/rubi/rubik-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('./fonts/rubi/rubik-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/rubi/rubik-v14-latin-regular.svg#Rubik') format('svg'); /* Legacy iOS */
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/rubi/rubik-v14-latin-regular.eot?') format('embedded-opentype'), /* IE6-IE8 */
+      url('./fonts/rubi/rubik-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('./fonts/rubi/rubik-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+      url('./fonts/rubi/rubik-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('./fonts/rubi/rubik-v14-latin-regular.svg#Rubik') format('svg'); /* Legacy iOS */
   }
 
 @font-face {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: lighter;
-    src: url('./fonts/rubi/rubik-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('./fonts/rubi/rubik-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-        url('./fonts/rubi/rubik-v14-latin-300.woff') format('woff'), /* Modern Browsers */
-        url('./fonts/rubi/rubik-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-        url('./fonts/rubi/rubik-v14-latin-300.svg#Rubik') format('svg'); /* Legacy iOS */
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: lighter;
+  src: url('./fonts/rubi/rubik-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./fonts/rubi/rubik-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./fonts/rubi/rubik-v14-latin-300.woff') format('woff'), /* Modern Browsers */
+    url('./fonts/rubi/rubik-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./fonts/rubi/rubik-v14-latin-300.svg#Rubik') format('svg'); /* Legacy iOS */
 }
 
 /* libre-baskerville */
 @font-face {
-    font-family: 'Libre';
-    font-style: italic;
-    font-weight: 400;
-    src: url('./fonts/libr/libre-baskerville-v9-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/libr/libre-baskerville-v9-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./fonts/libr/libre-baskerville-v9-latin-italic.woff') format('woff'), /* Modern Browsers */
-         url('./fonts/libr/libre-baskerville-v9-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/libr/libre-baskerville-v9-latin-italic.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
+  font-family: 'Libre';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/libr/libre-baskerville-v9-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('./fonts/libr/libre-baskerville-v9-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+      url('./fonts/libr/libre-baskerville-v9-latin-italic.woff') format('woff'), /* Modern Browsers */
+      url('./fonts/libr/libre-baskerville-v9-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('./fonts/libr/libre-baskerville-v9-latin-italic.svg#LibreBaskerville') format('svg'); /* Legacy iOS */
 }
 
 /*scrolbar*/
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
   
 body {
-    -ms-overflow-style: none; /*scrolbar*/
-    scrollbar-width: none;
+  -ms-overflow-style: none; /*scrolbar*/
+  scrollbar-width: none;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 h1 {
-    font-size: 1em;
-    margin-bottom: 10px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: lighter;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .btn {
-    background-color: transparent;
-    border: none;
-    padding: 2px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.7em;
+  background-color: transparent;
+  border: none;
+  padding: 2px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.7em;
 }
 
 #main {
-    margin-top: 20px;
-    max-height: 700px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  margin-top: 20px;
+  max-height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #cover {
-    height: 700px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .coverImg { 
-    max-height:100%;
-    max-width: 100%;
+  max-height: 600px;
 }
 
 #info {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-title {
-    margin: 40px;
-    font-family: 'Libre', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 3.5em;
-    text-align: center;
+  margin: 40px;
+  font-family: 'Libre', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3.5em;
+  text-align: center;
 }
 
 #options {
-    display:flex;
-    gap: 40px;
-    align-items: flex-end;
+  display:flex;
+  gap: 40px;
+  align-items: flex-end;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card > img {
-    width: 120px;
-    height: auto;
-    margin-bottom: 35px;
-    transition: transform .5s ease;
+  width: 120px;
+  height: auto;
+  margin-bottom: 35px;
+  transition: transform .5s ease;
 }
 
 .card > img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .card > p {
-    font-family: 'Rubik', sans-serif;
-    font-weight: lighter;
-    font-size: 1.2em;
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  font-size: 1.2em;
 }
 
 @media only screen and (max-width: 1300px) {
-    #cover {
-      width: 45vw;
-    }
+  #cover {
+    width: 45vw;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    #main {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        max-height: none;
-        flex-direction: column;
-        align-items: center;
-    }
+  #main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-height: none;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #cover {
-        height: 100%;
-    }
+  #cover {
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .btn {
-        font-size: 1.3em;
-    }
+  .btn {
+    font-size: 1.3em;
+  }
 
-    .section-title {
-        font-size: 2em;
-    }
+  .section-title {
+    font-size: 2em;
+  }
 
-    #options {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .coverImg { 
+    max-height: 400px;
+  }
 
-    .card > img {
-        width: 90px;
-    }
+  #options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .card > p {
-        font-size: 1em;
-    }
+  .card > img {
+    width: 90px;
+  }
+
+  .card > p {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .coverImg { 
+    max-height: 250px;
+  }
 }
